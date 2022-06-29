@@ -50,7 +50,7 @@ class AlexNet():
       intensity = 0.5
       res = 250
 
-      img = image.load_img(path, target_size=(150, 150))
+      img = image.load_img(path, target_size=(227, 227))
       x = image.img_to_array(img)
       x = np.expand_dims(x, axis=0)
       x = preprocess_input(x)
