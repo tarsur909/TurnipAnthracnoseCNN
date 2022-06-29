@@ -1,6 +1,7 @@
 class XceptionTransfer():
   def __init__(self):
     import keras 
+    import tensorflow as tf
     self.base_model = keras.applications.Xception(weights="imagenet",  input_shape=(150, 150, 3), include_top=False)  
     self.base_model.trainable = False
 
